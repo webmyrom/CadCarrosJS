@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sistema estoque de Carros</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap" rel="stylesheet">
+<script type = "text/javascript" src="./index.js"></script>
+<link rel="stylesheet" href="fundo.css">
+</head>
+<body>
+    <header>
+            <h1>Sistema de cadastro de Carro</h1>
+    </header>
+    <main>
+        <!-- <div class="title">
+            <h2>Menu</h2>
+        
+        </div>     -->
+        <div class="card">
+            <table border="1">
+                <th><h2>Cadastrar Veiculo</h2></br>
+                    <div class="lineInput">
+                        <input type="text" maxlength="8" id="placa" placeholder="Placa do carro">
+                        <input type="text" id="modelo" placeholder="Modelo do carro">
+                        <input type="text" id="marca" placeholder="Marca do carro">
+                        <input type="text" maxlength="4" onkeypress="return event.charCode >= 48 && event.charCode <= 57" id="ano" placeholder="Ano do carro"> 
+                    </div></br>
+                    <button onclick="carros.salvar()" id="btnSalvar">Cadastrar Veiculo</button>
+                        <!-- <button onclick="carros.buscaCarro()">Listar Veiculo</button> -->
+                            <!-- <button onclick="carros.deletar()">Excluir Veiculo</button> -->
+                                <!-- <button onclick="carros.cadastrarAutomovel()">Alterar Veiculo</button> -->
+                                    <button onclick="carros.limpar()">Limpar Campos</button></th>
+            </table>
+            </div>    
+        
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Placa</th>
+                    <th>Modelo</th>
+                    <th>Marca</th>
+                    <th>Ano</th>
+                    <th>Ação</th>
+                </thead>
+                <tbody id="tbody">
+                
+                </tbody>
+            </table>
+        </div>
+            
+    </main>
+    <div class="base">
+    <footer>
+        <p>Myrom Nascimento</p>
+    </footer>
+    </div>
+</body>
+</html>
